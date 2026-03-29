@@ -2,7 +2,6 @@ services:
   python-qr:
     container_name: python-qr
     build: .
+    restart: always
     ports:
       - "5000:5000"
-    volumes:
-      - .:/app
