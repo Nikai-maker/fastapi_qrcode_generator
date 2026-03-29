@@ -5,3 +5,11 @@ services:
     restart: always
     ports:
       - "5000:5000"
+    volumes:
+      - .:/app
+    networks:
+      - dockerprojects_default
+
+networks:
+  dockerprojects_default:
+    external: true
