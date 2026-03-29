@@ -41,7 +41,7 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           port: ${{ secrets.SERVER_PORT }}
           script: |
-            cd /demo_qrcode_fastapi   # путь к проекту на сервере
+            cd demo_qrcode_fastapi   # путь к проекту на сервере
             git pull origin main
             docker compose down
             docker compose up -d --build
